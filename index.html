@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" defer></script>
+        <script src="https://kit.fontawesome.com/c8a00ac58b.js" defer crossorigin="anonymous"></script>
+        <script src="./http.js" defer></script>
+        <script src="./todo.js" defer></script>
+        <script src="./validateTodo/ValidCreatTodo.js" defer></script>
+        <script src="./validateTodo/ValidEditTodo.js" defer></script>
+        <script src="./app.js" defer></script>   
+        <title>ToDoList</title>     
+    </head>
+    <body>         
+        <div class="container">
+            <div class="todo_container">
+                <div class="add_container">
+                    <input type="text" class="input_create" placeholder="ToDo Title" id="input_title">
+                    <input type="text" class="input_create" placeholder="ToDo Body" id="input_body">
+                    <button id="button_create">Create ToDo</button>
+                </div> 
+                <div class="error">
+                    <div class="title_error"></div>
+                    <div class="body_error"></div>
+                </div>               
+                <div class="todo_list"></div>                 
+            </div>                    
+            <div class="edit_container">
+                <h2>Edit ToDo</h2>
+                <div class="error_edit">
+                    <div class="edit_title_error"></div>
+                    <div class="edit_body_error"></div>
+                </div>
+                <div class="edit_todo">
+                    <input type="text" class="edit_title" id="edit_title" placeholder="ToDo Title">
+                    <input type="text" class="edit_body" id="edit_body" placeholder="ToDo Body">
+                    <button id="button_change" class="save">Save ToDo</button>
+                </div>
+            </div>  
+        </div>        
+    </body>
+</html>
